@@ -8,12 +8,25 @@
 
 import UIKit
 
-class MedicineCheckerTableViewController: UITableViewController {
-
+class MedicineCheckerTableViewController: UITableViewController , UISearchResultsUpdating{
+    
+    let medicineListData = medicineData
+    var filteredMedicines : [Medicine] = []
+    var resultSearchController = UISearchController()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
+        self.title = "Search Medicines"
+        
+        self.resultSearchController = UISearchController(searchResultsController: nil)
+        self.resultSearchController.searchResultsUpdater = self
+        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        self.resultSearchController.searchBar.sizeToFit()
+        definesPresentationContext = true
+        
+        self.tableView.tableHeaderView = self.resultSearchController.searchBar
+        
+        self.tableView.reloadData()
+                // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -29,24 +42,65 @@ class MedicineCheckerTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("MedicineCell")
+        
+        var medicine : Medicine!
+        
+        if self.resultSearchController.active {
+            medicine = filteredMedicines[indexPath.row]
+        }
+        else
+        {
+            medicine = medicineListData[indexPath.row]
+        }
+        cell?.textLabel?.text = medicine.name
+        cell?.detailTextLabel?.text = "Rs \((medicine.price)!)"
+        return cell!
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        if self.resultSearchController.active {
+            return self.filteredMedicines.count
+        }
+        else
+        {
+            return medicineListData.count
+        }
     }
-
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    
+    func filterContentforSearchText(searchText : String)
+    {
+        filteredMedicines = medicineListData.filter({
+            (medicine : Medicine) -> Bool in
+            let medicineMatch = medicine.name?.rangeOfString(searchText, options : NSStringCompareOptions.CaseInsensitiveSearch)
+            
+            return medicineMatch != nil
+        })
     }
-    */
-
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+                let searchText = searchController.searchBar.text
+                filterContentforSearchText(searchText!)
+                tableView.reloadData()
+        }
+    }
+    
+    
+   //    func filterContentForSearchText(searchText : String, scope : String = "All")
+//    {
+//        self.filteredMedicines = self.medicines.filter({
+//            (medicine : Medicine) -> Bool in
+//            let categoryMatch = (scope == "All") || (medicine.category == scope)
+//            let stringMatch = medicine.name?.rangeOfString(searchText)
+//            return (categoryMatch && (stringMatch != nil))
+//        })
+//    }
+    
+   
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -92,4 +146,4 @@ class MedicineCheckerTableViewController: UITableViewController {
     }
     */
 
-}
+

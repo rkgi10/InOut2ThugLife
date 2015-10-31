@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineCheckerTableViewController.swift; sourceTree = "<group>"; };
+		45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicineCheckerTableViewController.swift; path = ../MedicineCheckerTableViewController.swift; sourceTree = "<group>"; };
 		45A21F7A1BE50B8600EE1117 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		45A21F7C1BE50DE500EE1117 /* MedicinesampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesampleData.swift; sourceTree = "<group>"; };
 		45F9EB311BE4D9B300EDB1D2 /* Inout2ThugLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inout2ThugLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +83,6 @@
 		45F9EB281BE4D9B200EDB1D2 = {
 			isa = PBXGroup;
 			children = (
-				45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */,
 				45F9EB331BE4D9B300EDB1D2 /* Inout2ThugLife */,
 				45F9EB4A1BE4D9B300EDB1D2 /* Inout2ThugLifeTests */,
 				45F9EB551BE4D9B300EDB1D2 /* Inout2ThugLifeUITests */,
@@ -106,6 +105,7 @@
 			children = (
 				45F9EB341BE4D9B300EDB1D2 /* AppDelegate.swift */,
 				45F9EB361BE4D9B300EDB1D2 /* MainNavigationViewController.swift */,
+				45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */,
 				45A21F7A1BE50B8600EE1117 /* Medicine.swift */,
 				45A21F7C1BE50DE500EE1117 /* MedicinesampleData.swift */,
 				45F9EB3A1BE4D9B300EDB1D2 /* Main.storyboard */,

@@ -14,9 +14,9 @@ struct Medicine {
     var price : Double?
     var cures : [String]
     var isAvailableWithoutPrescription : Bool?
-    var image : UIImage?
+    var image : String?
     
-    init(name : String?, category : String?, price : Double?, cures : [String], isAvailableWithoutPrescription : Bool? , image : UIImage?)
+    init(name : String?, category : String?, price : Double?, cures : [String], isAvailableWithoutPrescription : Bool? , image : String?)
     {
         self.name = name
         self.category = category
