@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--App Name-->
+        <!--DoctorDost-->
         <scene sceneID="WIx-TL-pdW">
             <objects>
                 <viewController id="8VU-Co-b5t" sceneMemberID="viewController">
@@ -17,64 +17,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JU2-fC-Hrp">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-7W-3u9">
+                                <rect key="frame" x="16" y="64" width="343" height="593"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2jF-xX-7Yj">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="603"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-k3-FmX">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="178"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OBh-T6-HI5">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="301.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2AM-Mr-J2X">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="178"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZc-Xv-lsM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="301.5"/>
-                                                        <state key="normal" title="Medicine Checker"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Medicine" translatesAutoresizingMaskIntoConstraints="NO" id="n3v-NE-RGo">
+                                                        <rect key="frame" x="122" y="0.0" width="100" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="gvb-NX-KZO"/>
+                                                            <constraint firstAttribute="width" constant="100" id="odr-bA-4bQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fD-I0-AJU">
+                                                        <rect key="frame" x="114" y="128" width="116" height="50"/>
+                                                        <state key="normal" title="Medicine Verifier"/>
                                                         <connections>
-                                                            <segue destination="xKK-Yl-MUJ" kind="show" identifier="showMedicineChecker" id="PQk-5v-gok"/>
+                                                            <segue destination="xKK-Yl-MUJ" kind="showDetail" id="VDO-8S-Nh8"/>
                                                         </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gq-er-DCF">
-                                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="301.5"/>
-                                                        <state key="normal" title="Hospital Seeker"/>
-                                                        <connections>
-                                                            <segue destination="71h-bz-p6O" kind="show" id="Nrb-52-TXu"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pzN-hO-EgB">
-                                                <rect key="frame" x="0.0" y="301.5" width="343" height="301.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-8J-ClU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="301.5"/>
-                                                        <state key="normal" title="Hospital Seeker"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7L-VQ-gf6">
-                                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="301.5"/>
-                                                        <state key="normal" title="First-Aid Guide"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="pzN-hO-EgB" secondAttribute="trailing" id="NfL-FP-q1x"/>
-                                            <constraint firstAttribute="trailing" secondItem="OBh-T6-HI5" secondAttribute="trailing" id="WbP-Ii-mVL"/>
-                                            <constraint firstItem="pzN-hO-EgB" firstAttribute="leading" secondItem="2jF-xX-7Yj" secondAttribute="leading" id="dYM-Eu-5h2"/>
-                                            <constraint firstItem="OBh-T6-HI5" firstAttribute="leading" secondItem="2jF-xX-7Yj" secondAttribute="leading" id="r9s-6Q-vE8"/>
-                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="N1q-8r-wU9">
+                                        <rect key="frame" x="0.0" y="208" width="343" height="178"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hospital" translatesAutoresizingMaskIntoConstraints="NO" id="4Ti-rh-Uz4">
+                                                <rect key="frame" x="122" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="44f-oH-bkj"/>
+                                                    <constraint firstAttribute="height" constant="100" id="NpO-49-ZPD"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2M-Ex-Mxz">
+                                                <rect key="frame" x="118" y="100" width="108" height="78"/>
+                                                <state key="normal" title="Hospital Seeker"/>
+                                                <connections>
+                                                    <segue destination="71h-bz-p6O" kind="show" id="fVb-gI-Wd9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uTu-Fs-fF8">
+                                        <rect key="frame" x="0.0" y="416" width="343" height="178"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstaidkit" translatesAutoresizingMaskIntoConstraints="NO" id="psO-0Y-LyL">
+                                                <rect key="frame" x="122" y="0.0" width="100" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="RPh-kg-AgS"/>
+                                                    <constraint firstAttribute="height" constant="128" id="a1S-6k-HU6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-zX-mqT">
+                                                <rect key="frame" x="121" y="128" width="101" height="50"/>
+                                                <state key="normal" title="First Aid Guide"/>
+                                                <connections>
+                                                    <segue destination="3TP-Lv-rkf" kind="show" id="tEQ-i8-lt2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JU2-fC-Hrp" firstAttribute="leading" secondItem="rd0-dp-uRu" secondAttribute="leadingMargin" id="3ub-NT-bS4"/>
-                            <constraint firstItem="JU2-fC-Hrp" firstAttribute="top" secondItem="hKH-rU-uLe" secondAttribute="bottom" id="9tY-hz-SEB"/>
-                            <constraint firstItem="G4n-57-g5L" firstAttribute="top" secondItem="JU2-fC-Hrp" secondAttribute="bottom" id="GGV-dq-yF1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JU2-fC-Hrp" secondAttribute="trailing" id="oAX-uR-mfH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nHa-7W-3u9" secondAttribute="trailing" id="3h9-HK-7Ph"/>
+                            <constraint firstItem="G4n-57-g5L" firstAttribute="top" secondItem="nHa-7W-3u9" secondAttribute="bottom" id="gOQ-Zi-f4t"/>
+                            <constraint firstItem="nHa-7W-3u9" firstAttribute="top" secondItem="hKH-rU-uLe" secondAttribute="bottom" id="rvc-DZ-4mA"/>
+                            <constraint firstItem="nHa-7W-3u9" firstAttribute="top" secondItem="hKH-rU-uLe" secondAttribute="bottom" constant="10" id="wuh-XC-oBB"/>
+                            <constraint firstItem="nHa-7W-3u9" firstAttribute="leading" secondItem="rd0-dp-uRu" secondAttribute="leadingMargin" id="zxa-Bh-bgT"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rvc-DZ-4mA"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="App Name" id="no0-yI-3wX"/>
+                    <navigationItem key="navigationItem" title="DoctorDost" id="no0-yI-3wX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="xmw-9P-orI"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfB-Qo-6Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -240,6 +267,7 @@
                             <outlet property="delegate" destination="71h-bz-p6O" id="6ll-Sh-8CN"/>
                         </connections>
                     </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="button1" destination="E5q-vV-0kj" id="Gf2-iX-LAo"/>
                         <outlet property="button2" destination="sTP-I0-r0x" id="jhw-X0-WaK"/>
@@ -248,9 +276,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRH-Qa-tQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738.5" y="370.5"/>
+            <point key="canvasLocation" x="1835" y="427"/>
         </scene>
-        <!--Medicine Checker Table View Controller-->
+        <!--Search Medicine-->
         <scene sceneID="hP1-oh-Meo">
             <objects>
                 <tableViewController id="S8i-8I-3su" customClass="MedicineCheckerTableViewController" customModule="Inout2ThugLife" customModuleProvider="target" sceneMemberID="viewController">
@@ -289,7 +317,7 @@
                             <outlet property="delegate" destination="S8i-8I-3su" id="uCs-Ck-qi3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wAR-LP-Koe">
+                    <navigationItem key="navigationItem" title="Search Medicine" id="wAR-LP-Koe">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="xjk-N0-EDU">
                             <connections>
                                 <action selector="cameraButtonDeveloped:" destination="S8i-8I-3su" id="MU9-9t-zyH"/>
@@ -311,7 +339,109 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2282.5" y="-356.5"/>
+            <point key="canvasLocation" x="2749.5" y="-351.5"/>
+        </scene>
+        <!--First Aid Guide-->
+        <scene sceneID="BzG-je-yEy">
+            <objects>
+                <viewController id="iTi-B5-ah5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TRH-y3-3MH"/>
+                        <viewControllerLayoutGuide type="bottom" id="fAN-zo-W8f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tov-VB-rKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GK6-00-z5f">
+                                <rect key="frame" x="26" y="84" width="323" height="583"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-K5-0ef">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="181"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMX-Fk-SX0">
+                                                <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xM-bT-BbK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                        <state key="normal" title="Button" image="snamkebite"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dDa-BR-wFD">
+                                                <rect key="frame" x="177" y="0.0" width="147" height="181"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klZ-DH-WIl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                        <state key="normal" title="Button" image="burns"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-Ym-L1R">
+                                        <rect key="frame" x="0.0" y="201" width="323" height="181"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="URq-g2-BD4">
+                                                <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-0U-YcJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                        <state key="normal" title="Button" image="bleeding"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0WD-ER-Syl">
+                                                <rect key="frame" x="177" y="0.0" width="147" height="181"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkA-ZC-NEN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                        <state key="normal" title="Button" image="fracture"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-i5-fwT">
+                                        <rect key="frame" x="0.0" y="402" width="323" height="181"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f0I-s7-feU">
+                                                <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si5-pm-0Zc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                        <state key="normal" title="Button" image="heartattack"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pY9-kU-zGn">
+                                                <rect key="frame" x="177" y="0.0" width="147" height="181"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20d-Zv-Jei">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="181"/>
+                                                        <state key="normal" title="Button" image="choking"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GK6-00-z5f" firstAttribute="top" secondItem="TRH-y3-3MH" secondAttribute="bottom" constant="20" id="5BT-q6-Xk3"/>
+                            <constraint firstItem="fAN-zo-W8f" firstAttribute="top" secondItem="GK6-00-z5f" secondAttribute="bottom" id="IFb-jP-ShQ"/>
+                            <constraint firstItem="GK6-00-z5f" firstAttribute="leading" secondItem="tov-VB-rKM" secondAttribute="leadingMargin" constant="10" id="VQo-kv-qnA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GK6-00-z5f" secondAttribute="trailing" constant="10" id="gYY-6Q-8Na"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First Aid Guide" id="pI3-Ph-CSK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mM2-dt-7rz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665.5" y="-828.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gwQ-Mx-0QZ">
@@ -329,7 +459,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E11-xE-2Ff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="344" y="-45"/>
+            <point key="canvasLocation" x="564" y="-39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nxY-Tm-exn">
@@ -347,7 +477,36 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywq-et-MrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1695.5" y="-356.5"/>
+            <point key="canvasLocation" x="2279.5" y="-351.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vov-Cn-1sK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3TP-Lv-rkf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eXz-l2-C88">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iTi-B5-ah5" kind="relationship" relationship="rootViewController" id="jHu-lt-BMd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhZ-ln-xfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156.5" y="-838.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Medicine" width="200" height="200"/>
+        <image name="bleeding" width="204" height="280"/>
+        <image name="burns" width="204" height="274"/>
+        <image name="choking" width="204" height="280"/>
+        <image name="firstaidkit" width="166" height="200"/>
+        <image name="fracture" width="204" height="274"/>
+        <image name="heartattack" width="224" height="274"/>
+        <image name="hospital" width="204" height="204"/>
+        <image name="snamkebite" width="204" height="274"/>
+    </resources>
 </document>

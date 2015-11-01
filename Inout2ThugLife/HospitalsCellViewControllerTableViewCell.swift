@@ -22,7 +22,7 @@ class HospitalsCellViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var distance: UILabel!
     var hospital : Hospital! {
         didSet {
-            self.cellImage.image = hospital.image
+            
             name.text = hospital.name
             phoneNo.text = hospital.phoneNo
             distance.text = hospital.distance

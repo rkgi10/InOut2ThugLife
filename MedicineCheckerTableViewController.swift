@@ -21,7 +21,7 @@ class MedicineCheckerTableViewController: UITableViewController , UISearchResult
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Search Medicines"
-        self.tableView.backgroundColor = UIColor.flatBrownColor()
+       // self.tableView.backgroundColor = UIColor.flatBrownColor()
         
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
