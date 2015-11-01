@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453CDCEE1BE5CA640050363B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453CDCED1BE5CA640050363B /* CoreImage.framework */; };
+		453CDCF01BE5CB740050363B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 453CDCEF1BE5CB740050363B /* tessdata */; settings = {ASSET_TAGS = (); }; };
+		453CDCF21BE5CBBE0050363B /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 453CDCF11BE5CBBE0050363B /* libstdc++.6.0.9.tbd */; };
+		453CDCF51BE5CBF00050363B /* Fakeobjcclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 453CDCF41BE5CBF00050363B /* Fakeobjcclass.m */; settings = {ASSET_TAGS = (); }; };
+		453CDCF71BE5E8B40050363B /* HospitalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CDCF61BE5E8B40050363B /* HospitalsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		453CDCF91BE609FD0050363B /* CozyLoadingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CDCF81BE609FD0050363B /* CozyLoadingActivity.swift */; settings = {ASSET_TAGS = (); }; };
+		453CDCFB1BE610570050363B /* HospitalsCellViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CDCFA1BE610570050363B /* HospitalsCellViewControllerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		453CDCFD1BE611100050363B /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CDCFC1BE611100050363B /* Hospital.swift */; settings = {ASSET_TAGS = (); }; };
 		45A21F791BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		45A21F7B1BE50B8600EE1117 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A21F7A1BE50B8600EE1117 /* Medicine.swift */; settings = {ASSET_TAGS = (); }; };
 		45A21F7D1BE50DE500EE1117 /* MedicinesampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A21F7C1BE50DE500EE1117 /* MedicinesampleData.swift */; settings = {ASSET_TAGS = (); }; };
@@ -17,6 +25,7 @@
 		45F9EB411BE4D9B300EDB1D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F9EB3F1BE4D9B300EDB1D2 /* LaunchScreen.storyboard */; };
 		45F9EB4C1BE4D9B300EDB1D2 /* Inout2ThugLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9EB4B1BE4D9B300EDB1D2 /* Inout2ThugLifeTests.swift */; };
 		45F9EB571BE4D9B300EDB1D2 /* Inout2ThugLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9EB561BE4D9B300EDB1D2 /* Inout2ThugLifeUITests.swift */; };
+		77DC8C352C8AE256414F791E /* Pods_Inout2ThugLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C1D0C2CEEB8D16868786FB /* Pods_Inout2ThugLife.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		453CDCED1BE5CA640050363B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		453CDCEF1BE5CB740050363B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		453CDCF11BE5CBBE0050363B /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		453CDCF31BE5CBF00050363B /* Inout2ThugLife-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Inout2ThugLife-Bridging-Header.h"; sourceTree = "<group>"; };
+		453CDCF41BE5CBF00050363B /* Fakeobjcclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fakeobjcclass.m; sourceTree = "<group>"; };
+		453CDCF61BE5E8B40050363B /* HospitalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalsTableViewController.swift; sourceTree = "<group>"; };
+		453CDCF81BE609FD0050363B /* CozyLoadingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CozyLoadingActivity.swift; sourceTree = "<group>"; };
+		453CDCFA1BE610570050363B /* HospitalsCellViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalsCellViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		453CDCFC1BE611100050363B /* Hospital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicineCheckerTableViewController.swift; path = ../MedicineCheckerTableViewController.swift; sourceTree = "<group>"; };
 		45A21F7A1BE50B8600EE1117 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		45A21F7C1BE50DE500EE1117 /* MedicinesampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesampleData.swift; sourceTree = "<group>"; };
@@ -53,6 +71,9 @@
 		45F9EB521BE4D9B300EDB1D2 /* Inout2ThugLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Inout2ThugLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F9EB561BE4D9B300EDB1D2 /* Inout2ThugLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inout2ThugLifeUITests.swift; sourceTree = "<group>"; };
 		45F9EB581BE4D9B300EDB1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C1D0C2CEEB8D16868786FB /* Pods_Inout2ThugLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inout2ThugLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED4A85B11E0520C8118CE97 /* Pods-Inout2ThugLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inout2ThugLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inout2ThugLife/Pods-Inout2ThugLife.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD01FEB91C3CFB88E36901C /* Pods-Inout2ThugLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inout2ThugLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inout2ThugLife/Pods-Inout2ThugLife.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453CDCF21BE5CBBE0050363B /* libstdc++.6.0.9.tbd in Frameworks */,
+				453CDCEE1BE5CA640050363B /* CoreImage.framework in Frameworks */,
+				77DC8C352C8AE256414F791E /* Pods_Inout2ThugLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +111,8 @@
 				45F9EB4A1BE4D9B300EDB1D2 /* Inout2ThugLifeTests */,
 				45F9EB551BE4D9B300EDB1D2 /* Inout2ThugLifeUITests */,
 				45F9EB321BE4D9B300EDB1D2 /* Products */,
+				E8E1B38DC67E52B2A22F8A65 /* Pods */,
+				5050B921E9ACEA08C722D50C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,13 +131,20 @@
 			children = (
 				45F9EB341BE4D9B300EDB1D2 /* AppDelegate.swift */,
 				45F9EB361BE4D9B300EDB1D2 /* MainNavigationViewController.swift */,
+				453CDCF81BE609FD0050363B /* CozyLoadingActivity.swift */,
+				453CDCF41BE5CBF00050363B /* Fakeobjcclass.m */,
 				45A21F781BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift */,
 				45A21F7A1BE50B8600EE1117 /* Medicine.swift */,
 				45A21F7C1BE50DE500EE1117 /* MedicinesampleData.swift */,
 				45F9EB3A1BE4D9B300EDB1D2 /* Main.storyboard */,
+				453CDCFC1BE611100050363B /* Hospital.swift */,
+				453CDCFA1BE610570050363B /* HospitalsCellViewControllerTableViewCell.swift */,
 				45F9EB3D1BE4D9B300EDB1D2 /* Assets.xcassets */,
 				45F9EB3F1BE4D9B300EDB1D2 /* LaunchScreen.storyboard */,
 				45F9EB421BE4D9B300EDB1D2 /* Info.plist */,
+				453CDCEF1BE5CB740050363B /* tessdata */,
+				453CDCF31BE5CBF00050363B /* Inout2ThugLife-Bridging-Header.h */,
+				453CDCF61BE5E8B40050363B /* HospitalsTableViewController.swift */,
 			);
 			path = Inout2ThugLife;
 			sourceTree = "<group>";
@@ -134,6 +167,25 @@
 			path = Inout2ThugLifeUITests;
 			sourceTree = "<group>";
 		};
+		5050B921E9ACEA08C722D50C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				453CDCF11BE5CBBE0050363B /* libstdc++.6.0.9.tbd */,
+				453CDCED1BE5CA640050363B /* CoreImage.framework */,
+				69C1D0C2CEEB8D16868786FB /* Pods_Inout2ThugLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8E1B38DC67E52B2A22F8A65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ED4A85B11E0520C8118CE97 /* Pods-Inout2ThugLife.debug.xcconfig */,
+				BDD01FEB91C3CFB88E36901C /* Pods-Inout2ThugLife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45F9EB5B1BE4D9B300EDB1D2 /* Build configuration list for PBXNativeTarget "Inout2ThugLife" */;
 			buildPhases = (
+				B13814E2A5EF8178EE6FD49D /* Check Pods Manifest.lock */,
 				45F9EB2D1BE4D9B300EDB1D2 /* Sources */,
 				45F9EB2E1BE4D9B300EDB1D2 /* Frameworks */,
 				45F9EB2F1BE4D9B300EDB1D2 /* Resources */,
+				52EC639DC9D7C78832B44E2F /* Embed Pods Frameworks */,
+				657C63D8A1862D64C684501C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +251,7 @@
 		45F9EB291BE4D9B200EDB1D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rohit Gurnani";
 				TargetAttributes = {
@@ -238,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F9EB411BE4D9B300EDB1D2 /* LaunchScreen.storyboard in Resources */,
+				453CDCF01BE5CB740050363B /* tessdata in Resources */,
 				45F9EB3E1BE4D9B300EDB1D2 /* Assets.xcassets in Resources */,
 				45F9EB3C1BE4D9B300EDB1D2 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +316,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52EC639DC9D7C78832B44E2F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inout2ThugLife/Pods-Inout2ThugLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		657C63D8A1862D64C684501C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Inout2ThugLife/Pods-Inout2ThugLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13814E2A5EF8178EE6FD49D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45F9EB2D1BE4D9B300EDB1D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -266,9 +371,14 @@
 			files = (
 				45A21F791BE50A8B00EE1117 /* MedicineCheckerTableViewController.swift in Sources */,
 				45F9EB351BE4D9B300EDB1D2 /* AppDelegate.swift in Sources */,
+				453CDCF71BE5E8B40050363B /* HospitalsTableViewController.swift in Sources */,
+				453CDCFD1BE611100050363B /* Hospital.swift in Sources */,
 				45A21F7D1BE50DE500EE1117 /* MedicinesampleData.swift in Sources */,
+				453CDCF91BE609FD0050363B /* CozyLoadingActivity.swift in Sources */,
+				453CDCFB1BE610570050363B /* HospitalsCellViewControllerTableViewCell.swift in Sources */,
 				45F9EB371BE4D9B300EDB1D2 /* MainNavigationViewController.swift in Sources */,
 				45A21F7B1BE50B8600EE1117 /* Medicine.swift in Sources */,
+				453CDCF51BE5CBF00050363B /* Fakeobjcclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,23 +516,32 @@
 		};
 		45F9EB5C1BE4D9B300EDB1D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED4A85B11E0520C8118CE97 /* Pods-Inout2ThugLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Inout2ThugLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SophomoreVentures.Inout2ThugLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Inout2ThugLife/Inout2ThugLife-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		45F9EB5D1BE4D9B300EDB1D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD01FEB91C3CFB88E36901C /* Pods-Inout2ThugLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Inout2ThugLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SophomoreVentures.Inout2ThugLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Inout2ThugLife/Inout2ThugLife-Bridging-Header.h";
 			};
 			name = Release;
 		};

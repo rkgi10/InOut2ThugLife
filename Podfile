@@ -4,6 +4,9 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'Inout2ThugLife' do
+    pod 'ChameleonFramework/Swift'
+    pod 'TesseractOCRiOS', '3.4.0'
+    pod 'GoogleMaps'
 
 end
 

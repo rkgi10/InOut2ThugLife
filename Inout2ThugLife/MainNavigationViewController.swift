@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.flatBrownColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
